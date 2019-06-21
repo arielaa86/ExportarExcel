@@ -5,7 +5,6 @@
  */
 package GUI;
 
-import apple.laf.AquaLookAndFeel;
 import com.sun.java.swing.plaf.windows.WindowsLookAndFeel;
 import control_de_pacientes.Hospital;
 import control_de_pacientes.Paciente;
@@ -455,13 +454,7 @@ public class Principal extends javax.swing.JFrame {
 
                 } catch (UnsupportedLookAndFeelException ex) {
 
-                    try {
-                        
-                        UIManager.setLookAndFeel(new AquaLookAndFeel());
-                        
-                    } catch (UnsupportedLookAndFeelException ex1) {
-                        Logger.getLogger(Principal.class.getName()).log(Level.SEVERE, null, ex1);
-                    }
+                    
                 }
 
                 new Principal().setVisible(true);
